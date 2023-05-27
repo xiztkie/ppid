@@ -1,0 +1,614 @@
+CRITICAL - 2023-05-15 19:49:37 --> syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Permohonan.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ppid\\app\\Controllers\\Permohonan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Permohonan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Permohonan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Permohonan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Permohonan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:51:15 --> syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Permohonan.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ppid\\app\\Controllers\\Permohonan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Permohonan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Permohonan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Permohonan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Permohonan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:52:11 --> syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Permohonan.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ppid\\app\\Controllers\\Permohonan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Permohonan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Permohonan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Permohonan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Permohonan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:52:14 --> syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Permohonan.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ppid\\app\\Controllers\\Permohonan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Permohonan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Permohonan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Permohonan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Permohonan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:55:48 --> syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Permohonan.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ppid\\app\\Controllers\\Permohonan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Permohonan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Permohonan')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Permohonan')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Permohonan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:56:44 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:49 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:49 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:49 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:50 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:50 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:50 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:57 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:57:58 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:58:00 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:58:08 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:58:09 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:58:16 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:58:16 --> Cannot declare class App\Controllers\Permohonan because the name is already in use
+in APPPATH\Controllers\Permohonan.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-15 19:58:41 --> Invalid argument supplied for foreach()
+in APPPATH\Views\permohonan.php on line 153.
+ 1 APPPATH\Views\permohonan.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php', 153, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permohonan', [], true)
+ 5 APPPATH\Controllers\Permohonan.php(9): view('permohonan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:58:42 --> Invalid argument supplied for foreach()
+in APPPATH\Views\permohonan.php on line 153.
+ 1 APPPATH\Views\permohonan.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php', 153, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permohonan', [], true)
+ 5 APPPATH\Controllers\Permohonan.php(9): view('permohonan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:58:42 --> Invalid argument supplied for foreach()
+in APPPATH\Views\permohonan.php on line 153.
+ 1 APPPATH\Views\permohonan.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php', 153, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permohonan', [], true)
+ 5 APPPATH\Controllers\Permohonan.php(9): view('permohonan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:58:42 --> Invalid argument supplied for foreach()
+in APPPATH\Views\permohonan.php on line 153.
+ 1 APPPATH\Views\permohonan.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php', 153, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permohonan', [], true)
+ 5 APPPATH\Controllers\Permohonan.php(9): view('permohonan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:58:43 --> Invalid argument supplied for foreach()
+in APPPATH\Views\permohonan.php on line 153.
+ 1 APPPATH\Views\permohonan.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php', 153, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permohonan', [], true)
+ 5 APPPATH\Controllers\Permohonan.php(9): view('permohonan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 19:58:43 --> Invalid argument supplied for foreach()
+in APPPATH\Views\permohonan.php on line 153.
+ 1 APPPATH\Views\permohonan.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php', 153, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ppid\\app\\Views\\permohonan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('permohonan', [], true)
+ 5 APPPATH\Controllers\Permohonan.php(9): view('permohonan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:01:42 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:21:20 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:21:21 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:21:21 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:21:21 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:21:21 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 20:21:21 --> Call to a member function selectopd() on null
+in APPPATH\Controllers\Permohonan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 21:13:55 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\ppid\app\Config\Routes.php on line 32 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 915.
+ 1 APPPATH\Config\Routes.php(32): CodeIgniter\Router\RouteCollection->get('*')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('C:\\xampp\\htdocs\\ppid\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 21:13:58 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\ppid\app\Config\Routes.php on line 32 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 915.
+ 1 APPPATH\Config\Routes.php(32): CodeIgniter\Router\RouteCollection->get('*')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('C:\\xampp\\htdocs\\ppid\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 21:14:03 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\ppid\app\Config\Routes.php on line 32 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 915.
+ 1 APPPATH\Config\Routes.php(32): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('C:\\xampp\\htdocs\\ppid\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:16:32 --> mysqli_sql_exception: Unknown column 'no_permohonan' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:16:32 --> Unknown column 'no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:16:38 --> mysqli_sql_exception: Unknown column 'no_permohonan' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:16:38 --> Unknown column 'no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:18:38 --> mysqli_sql_exception: Unknown column 'no_permohonan' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:18:38 --> Unknown column 'no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:19:03 --> mysqli_sql_exception: Unknown column 'no_permohonan' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:19:03 --> Unknown column 'no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:19:35 --> mysqli_sql_exception: Unknown column 'no_permohonan' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:19:35 --> Unknown column 'no_permohonan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_permohonan`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:20:40 --> mysqli_sql_exception: Unknown column 'no_pemohon' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:20:40 --> Unknown column 'no_pemohon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:20:47 --> mysqli_sql_exception: Unknown column 'no_pemohon' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:20:47 --> Unknown column 'no_pemohon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:21:20 --> mysqli_sql_exception: Unknown column 'no_pemohon' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:21:20 --> Unknown column 'no_pemohon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:21:33 --> mysqli_sql_exception: Unknown column 'no_pemohon' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:21:33 --> Unknown column 'no_pemohon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_pemohon`) AS `no_permohonanMax`
+FROM `permohonan`', [], false)
+ 5 APPPATH\Models\M_Permohonan.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:22:40 --> mysqli_sql_exception: Unknown column 'no_pemohon' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:22:40 --> Unknown column 'no_pemohon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = \'2023\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = \'2023\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = \'2023\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = :year(tgl_po):', [...], false)
+ 5 APPPATH\Models\M_Permohonan.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+ERROR - 2023-05-15 21:22:42 --> mysqli_sql_exception: Unknown column 'no_pemohon' in 'field list' in C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\ppid\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_...', 0)
+#1 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_...')
+#2 C:\xampp\htdocs\ppid\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_...')
+#3 C:\xampp\htdocs\ppid\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_...', Array, false)
+#4 C:\xampp\htdocs\ppid\app\Models\M_Permohonan.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppid\app\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+#6 C:\xampp\htdocs\ppid\system\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+#7 C:\xampp\htdocs\ppid\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+#8 C:\xampp\htdocs\ppid\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppid\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ppid\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-05-15 21:22:42 --> Unknown column 'no_pemohon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = \'2023\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = \'2023\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = \'2023\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`no_pemohon`) AS `no_pemohonMax`
+FROM `permohonan`
+WHERE year(tgl_po) = :year(tgl_po):', [...], false)
+ 5 APPPATH\Models\M_Permohonan.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 21:28:46 --> rand() expects exactly 2 parameters, 1 given
+in APPPATH\Models\M_Permohonan.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rand() expects exactly 2 parameters, 1 given', 'C:\\xampp\\htdocs\\ppid\\app\\Models\\M_Permohonan.php', 18, [...])
+ 2 APPPATH\Models\M_Permohonan.php(18): rand(3)
+ 3 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-05-15 21:28:52 --> rand() expects exactly 2 parameters, 1 given
+in APPPATH\Models\M_Permohonan.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rand() expects exactly 2 parameters, 1 given', 'C:\\xampp\\htdocs\\ppid\\app\\Models\\M_Permohonan.php', 18, [...])
+ 2 APPPATH\Models\M_Permohonan.php(18): rand(5)
+ 3 APPPATH\Controllers\Permohonan.php(22): App\Models\M_permohonan->generatetiket()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Permohonan->generatetiket()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permohonan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
