@@ -69,6 +69,6 @@ class Auth extends BaseController
         session()->remove('id_int');
 
         session()->setFlashdata('pesan', 'Anda Telah Logout !!!');
-        return redirect()->to(base_url('#'));
+        return redirect()->to(base_url('home'));
     }
 }

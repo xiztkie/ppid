@@ -99,7 +99,7 @@
                                 <div class="table-responsive">
                                     <table class="table table-bordered mb-0">
                                         <thead>
-                                            <tr>
+                                            <tr align="center">
                                                 <th width="5%">No</th>
                                                 <th>Instansi</th>
                                                 <th>Informasi</th>
@@ -112,7 +112,7 @@
                                             <?php foreach ($infopublik as $key => $value) { ?>
                                                 <tr>
                                                     <td align="center"><?= $no++; ?></td>
-                                                    <td align="center"><?= $value['id_int']; ?></td>
+                                                    <td align="center"><?= $value['nama_int']; ?></td>
                                                     <td align="center">
                                                         <option value="<?= $value['informasi']; ?>">
                                                             <?php if ($value['informasi'] == 1) {

@@ -46,7 +46,6 @@ class Permohonan extends BaseController
             'dgn_cara' => $this->request->getPost('dgn_cara'),
             'file' => $this->request->getPost('file'),
             'status_tiket' => $this->request->getPost('status_tiket'),
-            'status_proses' => $this->request->getPost('status_proses'),
             'created_at' => date('Y-m-d H:i:s')
         );
         $this->M_Permohonan->kirimdata($data);

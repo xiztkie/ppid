@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\M_Cektiket;
+use App\Models\M_Prosespermohonan;
 
 class Cektiket extends BaseController
 {
@@ -11,6 +12,7 @@ class Cektiket extends BaseController
     public function __construct()
     {
         $this->M_Cektiket = new M_Cektiket();
+        $this->M_Prosespermohonan = new M_Prosespermohonan();
     }
 
     public function index()
@@ -33,7 +35,11 @@ class Cektiket extends BaseController
             $errorMessage = "Data tidak ditemukan.";
             return view('cektiket', ['errorMessage' => $errorMessage]);
         } else {
-            return view('hasil', ['data' => $data]);
+            $data1 = [
+                'proses_tiket'=> $this->M_Prosespermohonan->getProses(),
+                'data' => $data
+            ];
+            return view('hasil', $data1 );
         }
     }
 
@@ -71,6 +77,7 @@ class Cektiket extends BaseController
             $data1 = [
                 'title' => 'Cek Progress',
                 'isi'   => 'admin/hasilcek',
+                'proses_tiket'=> $this->M_Prosespermohonan->getProses(),
                 'data' => $data
             ];
             return view('layout/wrapper', $data1);

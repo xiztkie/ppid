@@ -43,7 +43,7 @@
                                                                 <div class="col-12">
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered mb-0">
-                                                                            <thead>
+                                                                            <thead class="text-center">
                                                                                 <tr>
                                                                                     <th>Nomor Tiket</th>
                                                                                     <th>Nomor Kontak</th>
@@ -55,32 +55,61 @@
                                                                             <tbody>
                                                                                 <?php foreach ($data as $row) : ?>
                                                                                     <tr>
-                                                                                        <td><?= $row['no_tiket']; ?></td>
-                                                                                        <td><?= $row['kontak']; ?></td>
-                                                                                        <td><?= $row['created_at']; ?></td>
-                                                                                        <td><?php if ($row['status_tiket'] == 0) {
+                                                                                        <td align="center" width="12%"><?= $row['no_tiket']; ?></td>
+                                                                                        <td align="center" width="12%"><?= $row['kontak']; ?></td>
+                                                                                        <td align="center" width="12%"><?= $row['created_at']; ?></td>
+                                                                                        <td align="center" width="12%">
+                                                                                            <?php if ($row['status_tiket'] == 0) {
                                                                                                 echo "Permohonan Belum Disetujui";
                                                                                             } else {
                                                                                                 echo "Sedang Diproses";
-                                                                                            }; ?></td>
-                                                                                        <td><?= $row['keterangan']; ?></td>
+                                                                                            }; ?>
+                                                                                        </td>
+                                                                                        <td align="center"><?= $row['keterangan']; ?></td>
                                                                                     </tr>
-                                                                                <?php endforeach; ?>
-                                                                                <?php foreach ($data as $row) : ?>
-                                                                                    <tr>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                        <td></td>
-                                                                                        <td><?php if ($row['status_tiket'] == 0) {
-                                                                                                echo "Permohonan Disetujui";
-                                                                                            } else if ($row['status_tiket'] == 1) {
-                                                                                                echo "Permohonan Ditolak";
-                                                                                            } else if ($row['status_tiket'] == 2) {
-                                                                                                echo "Permohonan Ditolak";
-                                                                                            } ?></td>
-                                                                                        <td><?= $row['keterangan']; ?></td>
-                                                                                    </tr>
-                                                                                <?php endforeach; ?>
+
+                                                                                    <?php foreach ($proses_tiket as $key => $proses) { ?>
+                                                                                        <?php if ($row['id_pemohon'] == $proses['id_pemohon']) { ?>
+                                                                                            <tr>
+                                                                                                <td colspan="2"></td>
+                                                                                                <td align="center">
+                                                                                                    <?php if ($row['id_pemohon'] == $proses['id_pemohon']) {
+                                                                                                        echo $proses['date_proses'];
+                                                                                                    } else {
+                                                                                                    } ?>
+                                                                                                </td>
+                                                                                                <td align="center">
+                                                                                                    <?php if ($row['id_pemohon'] == $proses['id_pemohon']) {
+                                                                                                        echo $proses['status_pro'];
+                                                                                                    } else {
+                                                                                                    } ?>
+                                                                                                </td>
+                                                                                                <td align="center" style="word-break: break-all;">
+                                                                                                    <?php if ($row['id_pemohon'] == $proses['id_pemohon']) {
+                                                                                                        echo $proses['ket_proses'];
+                                                                                                    } else {
+                                                                                                    } ?>
+                                                                                                </td>
+                                                                                            <?php } else { ?>
+                                                                                            <?php } ?>
+                                                                                        <?php } ?>
+
+                                                                                        <?php foreach ($data as $key => $row1) { ?>
+                                                                                            <?php if ($row1['solved'] == 1) { ?>
+                                                                                            <tr>
+                                                                                                <td colspan="2"></td>
+                                                                                                <td align="center"></td>
+                                                                                                <td align="center">
+                                                                                                    <button type="button" class="btn btn-primary btn-rounded waves-effect waves-light">Solved</button>
+                                                                                                </td>
+                                                                                                <td align="center" style="word-break: break-all;">
+                                                                                                    Permohonan Telah Selesai dan Tiket Telah Ditutup
+                                                                                                </td>
+                                                                                            <?php } else { ?>
+                                                                                            <?php } ?>
+                                                                                        <?php } ?>
+
+                                                                                    <?php endforeach; ?>
                                                                             </tbody>
                                                                         </table>
                                                                     <?php else : ?> <p>Data tidak ditemukan.</p>

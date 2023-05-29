@@ -27,7 +27,7 @@ class Home extends BaseController
       $data = [
          'title' => 'Infopublik',
          'opd' => $this->M_Home->selectinstansi(),
-         'infopublik' => $infopublik->orderBy('id_info', 'DESC')->paginate(10, 'infopublik'),
+         'infopublik' => $infopublik->join('instansi', 'instansi.id_int = infopublik.id_int')->orderBy('id_info', 'DESC')->paginate(10, 'infopublik'),
          'pager' => $this->M_Home->pager,
          'currentpage' => $currentpage,
          'isi'   => 'admin/infopublik'
