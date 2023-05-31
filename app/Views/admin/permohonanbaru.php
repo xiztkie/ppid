@@ -182,7 +182,7 @@
                                         <label class="form-label">Dokumen Pendukung</label>
                                         <div class="col-md-12">
                                             <div class="mb-6">
-                                                <a href="<?= base_url('files/regulasi/') ?><?= $value['file']; ?>" target="_blank"><i class="fas fa-download fa-3x"></i></a>
+                                                <a href="<?= base_url('files/dokumen/') ?><?= $value['file']; ?>" target="_blank"><i class="fas fa-download fa-3x"></i></a>
                                             </div>
                                         </div>
                                     </div>

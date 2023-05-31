@@ -30,6 +30,10 @@ class Permohonan extends BaseController
 
     public function tambahtiket()
     {
+        $file = $this->request->getFile('file');
+        $file->move('files/dokumen');
+        $namafile = $file->getName();
+
         $data = array(
             'no_tiket' => $this->request->getPost('no_tiket'),
             'nik' => $this->request->getPost('nik'),
@@ -44,7 +48,7 @@ class Permohonan extends BaseController
             'id_int' => $this->request->getPost('id_int'),
             'cara_info' => $this->request->getPost('cara_info'),
             'dgn_cara' => $this->request->getPost('dgn_cara'),
-            'file' => $this->request->getPost('file'),
+            'file' => $namafile,
             'status_tiket' => $this->request->getPost('status_tiket'),
             'created_at' => date('Y-m-d H:i:s')
         );

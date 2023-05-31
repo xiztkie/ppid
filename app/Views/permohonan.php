@@ -59,7 +59,7 @@
                                                             echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                                         </div>';
                                             } ?>
-                                            <form method="post" action="<?= site_url('/permohonan/tambahtiket') ?>">
+                                            <form method="post" action="<?= site_url('/permohonan/tambahtiket') ?>" enctype="multipart/form-data">
                                                 <?php csrf_field() ?>
                                                 <div class="d-flex">
                                                     <div class="col-5">
