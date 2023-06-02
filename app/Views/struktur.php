@@ -25,7 +25,7 @@ use Config\Images;
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="card-body text-center">
-                           <img src="<?= base_url("assets/Images/struktur.jpg"); ?>" height="auto" width="auto" ></img>
+                           <img class="img-fluid" src="<?= base_url("assets/Images/struktur.jpg"); ?>" height="auto" width="auto" ></img>
                         </div>
                     </div>
                 </div>

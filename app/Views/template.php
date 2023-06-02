@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
     <title>Portal PPID Kabupaten Puncak Jaya</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="<?= base_url() ?>assets/images/favicon.ico">
@@ -44,12 +43,12 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-                        <a href="#" class="logo logo-light">
+                        <a href="<?= base_url('#'); ?>" class="logo logo-light">
                             <span class="logo-sm">
-                                <img src="<?= base_url() ?>assets/images/logo-sm.png" alt="logo-sm-light" height="22">
+                                <img src="<?= base_url() ?>assets/images/logo-light.png" alt="logo-sm-light" height="65">
                             </span>
                             <span class="logo-lg">
-                                <img src="<?= base_url() ?>assets/images/logo-light.png" alt="logo-light" height="20">
+                                <img src="<?= base_url() ?>assets/images/logo-light.png" alt="logo-light" height="65">
                             </span>
                         </a>
                     </div>
@@ -62,7 +61,6 @@
         <div class="topnav">
             <div class="container-fluid">
                 <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
-
                     <div class="collapse navbar-collapse" id="topnav-menu-content">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -102,25 +100,21 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="d-flex">
-                        <div class="d-inline-block">
-                            <button type="button" class="btn header-item waves-effect">  
-                                <?php 
+                        <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" >
+                                <?php
                                 $username = session()->get('username');
-                                if ($username=='') { ?>
-                                    <a class="d-none d-xl-inline-block ms-1" href="<?= base_url('login'); ?>">
-                                    <img class="rounded-circle header-profile-user" src="<?= base_url() ?>assets/images/users/avatar-1.jpg" alt="Header Avatar">
-                                        Login
+                                if ($username == '') { ?>
+                                    <a class="nav-link" href="<?= base_url('login'); ?>">
+                                        <i class=" fas fa-user-lock me-2"></i>Login
                                     </a>
                                 <?php } else { ?>
-                                    <a class="d-none d-xl-inline-block ms-1" href="<?= base_url('dashboard'); ?>">
-                                    <img class="rounded-circle header-profile-user" src="<?= base_url() ?>assets/images/users/avatar-1.jpg" alt="Header Avatar">
-                                        Dashboard
+                                    <a class="nav-link" href="<?= base_url('dashboard'); ?>">
+                                        <i class=" ri-dashboard-line me-2"></i>Dashboard
                                     </a>
                                 <?php } ?>
-                            </button>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -130,21 +124,21 @@
 
 
         <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script> © Upcube.
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="text-sm-end d-none d-sm-block">
-                            Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign
-                        </div>
-                    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> @ e-PPID.
+            </div>
+            <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                    Development by <i class=" far fa-copyright"></i> Epenthink Papua
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+</footer>
 
     </div>
     <!-- end main content-->

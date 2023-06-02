@@ -34,6 +34,41 @@ class Home extends BaseController
       ];
       return view('home', $data);
    }
+
+   public function download($id_info)
+   {
+       $model = new M_Home();
+       
+       // Increase the counter value
+       $model->incrementCounter($id_info);
+
+       // Get file information based on ID
+       $fileInfo = $model->find($id_info);
+
+       if ($fileInfo) {
+           // Get the file path to be downloaded
+           $filePath = FCPATH . 'files/infopublik/' . $fileInfo['file_info'];
+
+           // Check if the file exists
+           if (file_exists($filePath)) {
+               // Set HTTP headers to initiate the download
+               header("Content-Type: application/octet-stream");
+               header("Content-Transfer-Encoding: Binary");
+               header("Content-Disposition: attachment; filename=\"" . basename($filePath) . "\"");
+               header("Content-Length: " . filesize($filePath));
+
+               // Read the file and send the content to the output
+               readfile($filePath);
+           } else {
+               // Handle the case when the file is not found
+               echo "File not found.";
+           }
+       } else {
+           // Handle the case when the ID info is not valid
+           echo "Invalid ID info.";
+       }
+   }
+
    public function tentang()
    {
       return view('tentang');

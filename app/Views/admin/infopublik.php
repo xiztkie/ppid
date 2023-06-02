@@ -38,12 +38,13 @@
                             <div class="card-body">
                                 <table class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                     <thead>
-                                        <tr>
+                                        <tr class="text-center">
                                             <th width="5%">No</th>
                                             <th>Instansi</th>
                                             <th>Informasi</th>
                                             <th width="50%">Judul</th>
                                             <th width="5%">Download</th>
+                                            <th width="5%">Dilihat</th>
                                             <th width="10%">Aksi</th>
                                         </tr>
                                     </thead>
@@ -65,6 +66,7 @@
                                                 </td>
                                                 <td><?= $value['created_at']; ?><br><?= $value['judul']; ?></td>
                                                 <td align="center"><a href="<?= base_url('files/infopublik/') ?><?= $value['file_info']; ?>"><i class=" fas fa-download "></i></a></td>
+                                                <td align="center"><i class="fas fa-eye">&nbsp;&nbsp;<?= $value['counter']; ?></i></a></td>
                                                 <td align="center">
                                                     <div class="btn-group">
                                                         <a href="<?= base_url('infopublik/delete/' . $value['id_info']) ?>">

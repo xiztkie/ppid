@@ -49,7 +49,7 @@ class Filters extends BaseConfig
                 'regulasi',
                 'laporan',
                 'permohonan/*',
-                'statistik/*',
+                'statistik',
                 'cektiket/*',
                 'cektiket',
                 'permohonan',

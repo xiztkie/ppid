@@ -51,6 +51,15 @@
 <script src="<?= base_url() ?>assets/js/pages/datatables.init.js"></script>
 
 <script src="<?= base_url() ?>assets/js/app.js"></script>
+<!-- google maps api -->
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyCtSAR45TFgZjOs4nBFFZnII-6mMHLfSYI"></script>
+
+<!-- Gmaps file -->
+<script src="http://103.160.119.33/assets/libs/gmaps/gmaps.min.js"></script>
+
+<!-- demo codes -->
+<script src="http://103.160.119.33/assets/js/pages/gmaps.init.js"></script>
+<script>
 
 </body>
 
