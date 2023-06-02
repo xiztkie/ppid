@@ -26,7 +26,7 @@ class Permohonan extends BaseController
     {
         return json_encode($this->M_Permohonan->generatetiket());
     }
-    
+
 
     public function tambahtiket()
     {
@@ -72,9 +72,11 @@ class Permohonan extends BaseController
 
         $email->setTo($emailto);
         $email->setFrom('ppid.puncakjaya@outlook.com', 'PPID PUNCAK JAYA');
-        $email->setSubject('PERMOHONANA DATA' );
-        $email->setMessage('Dear ' . $nama  . $no_tiket . 'Thank you for registering.');
-        
+        $email->setSubject('PERMOHONANA DATA');
+
+        // Load template email menggunakan view()
+        $message = view('templatemail', ['nama' => $nama, 'no_tiket' => $no_tiket]);
+        $email->setMessage($message);
 
         $email->send();
     }

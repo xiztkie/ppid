@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class M_permohonan extends Model
+class M_Permohonan extends Model
 {
     public function selectinstansi()
     {
