@@ -19,7 +19,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
- $routes->setAutoRoute(true);
+$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -44,6 +44,7 @@ $routes->get('/dashboard', 'Admin::index');
 $routes->get('/permohonandata', 'Permohonandata::index');
 $routes->get('/permohonanbaru', 'Permohonandata::indexbaru');
 $routes->get('/prosespermohonan', 'Permohonandata::indexproses');
+$routes->get('/email', 'Emailsetting::index');
 $routes->get('/cekpermohonan', 'Cektiket::progresstiket');
 
 /*

@@ -91,7 +91,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="calendar.html" class=" waves-effect">
+                        <a href="<?= base_url('email') ?>" class=" waves-effect">
                             <i class="ri-mail-settings-line"></i>
                             <span>E-mail</span>
                         </a>

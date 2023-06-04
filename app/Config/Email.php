@@ -3,6 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
+use App\Models\M_Email;
 
 class Email extends BaseConfig
 {
@@ -28,22 +29,22 @@ class Email extends BaseConfig
     /**
      * SMTP Server Address
      */
-    public string $SMTPHost = 'smtp.office365.com';
+    public string $SMTPHost;
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = 'ppid.puncakjaya@outlook.com';
+    public string $SMTPUser;
 
     /**
      * SMTP Password
      */
-    public string $SMTPPass = 'Punc4kj4y42023';
+    public string $SMTPPass;
 
     /**
      * SMTP Port
      */
-    public int $SMTPPort = 587;
+    public int $SMTPPort;
 
     /**
      * SMTP Timeout (in seconds)
@@ -58,7 +59,7 @@ class Email extends BaseConfig
     /**
      * SMTP Encryption. Either tls or ssl
      */
-    public string $SMTPCrypto = 'tls';
+    public string $SMTPCrypto;
 
     /**
      * Enable word-wrap
@@ -114,4 +115,19 @@ class Email extends BaseConfig
      * Enable notify message from server
      */
     public bool $DSN = false;
+
+    public function __construct()
+    {
+        $model = new M_Email();
+        $settings = $model->findAll();
+
+        if (count($settings) > 0) {
+            $setting = $settings[0];
+            $this->SMTPHost = $setting['smtp_host'];
+            $this->SMTPUser = $setting['smtp_user'];
+            $this->SMTPPass = $setting['smtp_pass'];
+            $this->SMTPPort = $setting['smtp_port'];
+            $this->SMTPCrypto = $setting['smtp_crypto'];
+        }
+    }
 }
