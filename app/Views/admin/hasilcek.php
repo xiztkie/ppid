@@ -44,7 +44,7 @@
                                                                     <div class="table-responsive">
                                                                         <table class="table table-bordered mb-0">
                                                                             <thead class="text-center">
-                                                                                <tr>
+                                                                                <tr style="background-color: #C4B0FF;">
                                                                                     <th>Nomor Tiket</th>
                                                                                     <th>Nomor Kontak</th>
                                                                                     <th>Tanggal Permohonan</th>
@@ -96,11 +96,11 @@
 
                                                                                         <?php foreach ($data as $key => $row1) { ?>
                                                                                             <?php if ($row1['solved'] == 1) { ?>
-                                                                                            <tr>
+                                                                                            <tr style="background-color: #FFCDA8;">
                                                                                                 <td colspan="2"></td>
-                                                                                                <td align="center"></td>
+                                                                                                <td align="center"><?= $row['solved_date']; ?></td>
                                                                                                 <td align="center">
-                                                                                                    <button type="button" class="btn btn-primary btn-rounded waves-effect waves-light">Solved</button>
+                                                                                                    Solved
                                                                                                 </td>
                                                                                                 <td align="center" style="word-break: break-all;">
                                                                                                     Permohonan Telah Selesai dan Tiket Telah Ditutup

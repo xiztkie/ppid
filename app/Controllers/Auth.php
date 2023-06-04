@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\M_Auth;
+use App\Models\M_Instansi;
 
 
 class Auth extends BaseController
@@ -11,6 +12,7 @@ class Auth extends BaseController
     public function __construct()
     {
         $this->M_Auth = new M_Auth();
+        $this->M_Instansi = new M_Instansi();
         helper('form');
         helper('url');
     }
@@ -50,7 +52,17 @@ class Auth extends BaseController
                     session()->set('log', true);
                     session()->set('username', $cek['username']);
                     session()->set('level', $cek['level']);
-                    session()->set('id_int', $cek['id_int']);
+
+                    // Mendapatkan data instansi berdasarkan id_int
+                    $instansi = $this->M_Instansi->getInstansiById($cek['id_int']);
+                    if ($instansi) {
+                        session()->set('id_int', $cek['id_int']);
+                        session()->set('nama_int', $instansi['nama_int']);
+                    } else {
+                        session()->setFlashdata('pesan', 'Data Instansi Tidak Ditemukan');
+                        return redirect()->to(base_url('auth/login'));
+                    }
+
                     return redirect()->to(base_url('admin'));
                 } else {
                     // Jika password tidak cocok

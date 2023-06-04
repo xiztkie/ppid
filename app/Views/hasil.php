@@ -77,7 +77,7 @@
                                                     <div class="table-responsive">
                                                         <table class="table table-bordered mb-0">
                                                             <thead class="text-center">
-                                                                <tr>
+                                                                <tr class="table-info text-center">
                                                                     <th>Nomor Tiket</th>
                                                                     <th>Nomor Kontak</th>
                                                                     <th>Tanggal Permohonan</th>
@@ -91,7 +91,7 @@
                                                                         <td align="center" width="12%"><?= $row['no_tiket']; ?></td>
                                                                         <td align="center" width="12%"><?= $row['kontak']; ?></td>
                                                                         <td align="center" width="12%"><?= $row['created_at']; ?></td>
-                                                                        <td align="center" width="12%">
+                                                                        <td align="center" width="15%">
                                                                             <?php if ($row['status_tiket'] == 0) {
                                                                                 echo "Permohonan Belum Disetujui";
                                                                             } else {
@@ -99,8 +99,7 @@
                                                                             }; ?>
                                                                         </td>
                                                                         <td><?= $row['keterangan']; ?></td>
-                                                                    </tr>
-                                                            
+                                                                    
                                                                     <?php foreach ($proses_tiket as $key => $proses) { ?>
                                                                         <?php if ($row['id_pemohon'] == $proses['id_pemohon']) { ?>
                                                                             <tr>
@@ -126,22 +125,20 @@
                                                                             <?php } else { ?>
                                                                             <?php } ?>
                                                                         <?php } ?>
-
                                                                         <?php foreach ($data as $key => $row1) { ?>
                                                                             <?php if ($row1['solved'] == 1) { ?>
-                                                                            <tr>
+                                                                            <tr style="background-color: #FFCDA8;">
                                                                                 <td colspan="2"></td>
-                                                                                <td align="center"></td>
+                                                                                <td align="center"><?= $row['solved_date']; ?></td>
                                                                                 <td align="center">
-                                                                                <button type="button" class="btn btn-primary btn-rounded waves-effect waves-light">Solved</button>
+                                                                                    Solved
                                                                                 </td>
                                                                                 <td style="word-break: break-all;">
-                                                                                Permohonan Telah Selesai dan Tiket Telah Ditutup 
+                                                                                    Permohonan Telah Selesai dan Tiket Telah Ditutup
                                                                                 </td>
                                                                             <?php } else { ?>
                                                                             <?php } ?>
                                                                         <?php } ?>
-                                                                        
                                                                     <?php endforeach; ?>
                                                             </tbody>
                                                         </table>

@@ -20,4 +20,13 @@ class M_Prosespermohonan extends Model
             ->orderBy('prosestiket.id_pemohon', 'DESC')
             ->findAll();
     }
+    public function getProsestiket()
+    {
+        return $this
+            ->join('permohonan', 'permohonan.id_pemohon = prosestiket.id_pemohon')
+            ->join('instansi', 'instansi.id_int = permohonan.id_int')
+            ->where('permohonan.status_tiket', 2)
+            ->orderBy('prosestiket.id_pemohon', 'DESC')
+            ->findAll();
+    }
 }

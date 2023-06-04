@@ -7,6 +7,13 @@ use CodeIgniter\Model;
 class M_Instansi extends Model
 {
     protected $table = 'instansi';
+    protected $primaryKey = 'id_int';
+    protected $allowedFields = ['nama_int'];
+
+    public function getInstansiById($id_int)
+    {
+        return $this->where('id_int', $id_int)->first();
+    }
 
     public function search($keyword)
     {

@@ -36,7 +36,7 @@ class Cektiket extends BaseController
             return view('cektiket', ['errorMessage' => $errorMessage]);
         } else {
             $data1 = [
-                'proses_tiket'=> $this->M_Prosespermohonan->getProses(),
+                'proses_tiket'=> $this->M_Prosespermohonan->getProsestiket(),
                 'data' => $data
             ];
             return view('hasil', $data1 );
@@ -77,7 +77,7 @@ class Cektiket extends BaseController
             $data1 = [
                 'title' => 'Cek Progress',
                 'isi'   => 'admin/hasilcek',
-                'proses_tiket'=> $this->M_Prosespermohonan->getProses(),
+                'proses_tiket'=> $this->M_Prosespermohonan->getProsestiket(),
                 'data' => $data
             ];
             return view('layout/wrapper', $data1);

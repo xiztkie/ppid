@@ -18,26 +18,32 @@ class Permohonandata extends BaseController
     }
     public function index()
     {
-        $currentpage = $this->request->getVar('page_perdata') ? $this->request->getVar('page_perdata') : 1;
+        $currentpage = $this->request->getVar('page_perdata') ?: 1;
         $keyword = $this->request->getVar('keyword');
+        $perdata = $this->M_Permohonandata;
+
+        // Check if the session level is 'Operator' and add the condition
+        if (session('level') === 'Operator') {
+            $perdata->where('permohonan.id_int', session('id_int'));
+        }
+
         if ($keyword) {
-            $perdata = $this->M_Permohonandata->search($keyword);
-        } else {
-            $perdata = $this->M_Permohonandata;
+            $perdata = $perdata->search($keyword);
         }
 
         $data = [
             'title' => 'Permohonan data',
             'permohonandata' => $perdata->join('instansi', 'instansi.id_int = permohonan.id_int')
-                ->table('instansi')
                 ->orderBy('id_pemohon', 'DESC')
                 ->paginate(10, 'permohonan'),
             'pager' => $this->M_Permohonandata->pager,
             'currentpage' => $currentpage,
-            'isi'   => 'admin/permohonandata'
+            'isi' => 'admin/permohonandata'
         ];
+
         return view('layout/wrapper', $data);
     }
+
 
     public function indexbaru()
     {
@@ -73,9 +79,14 @@ class Permohonandata extends BaseController
             $perbaru = $this->M_Permohonandata;
         }
 
+        // Check if the session level is 'Operator' and add the condition
+        if (session('level') === 'Operator') {
+            $perbaru->where('permohonan.id_int', session('id_int'));
+        }
+
         $data = [
             'title' => 'Proses Permohonan Data',
-            'proses_tiket'=> $this->M_Prosespermohonan->getProses(),
+            'proses_tiket' => $this->M_Prosespermohonan->getProses(),
             'prosespermohonan' => $perbaru->join('instansi', 'instansi.id_int = permohonan.id_int')
                 ->where('permohonan.status_tiket', 2)
                 ->where('permohonan.solved', null)
