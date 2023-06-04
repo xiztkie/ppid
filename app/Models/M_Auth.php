@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class M_Auth extends Model
 {
+    protected $table = 'user'; 
+    protected $primaryKey = 'id_user'; 
+    protected $allowedFields = ['username', 'password', 'level']; 
+
     public function login($username, $password)
     {
-        return $this->db->table('user')->where(
-            [
-                'username' => $username,
-                'password' => $password
-            ]
-        )->get()->getRowArray();
+        return $this->where('username', $username)
+                    ->first();
     }
 }

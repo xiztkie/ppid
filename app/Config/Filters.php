@@ -50,6 +50,7 @@ class Filters extends BaseConfig
                 'laporan',
                 'permohonan/*',
                 'statistik',
+                'statistik/*',
                 'cektiket/*',
                 'cektiket',
                 'permohonan',

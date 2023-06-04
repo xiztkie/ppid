@@ -58,9 +58,12 @@
                                                         <td><?= $value['id_int']; ?></td>
                                                         <td align="center">
                                                             <div class="btn-group">
-                                                                <a href="<?= base_url('user/delete/' . $value['id_user']) ?>">
-                                                                    <i class="ri-delete-bin-6-fill"></i>
-                                                                </a>&nbsp;&nbsp;
+                                                                <form action="<?= base_url('user/delete/' . $value['id_user']) ?>" method="post">
+                                                                <?= csrf_field() ?>
+                                                                    <button type="submit" class="btn btn-link p-0 m-0">
+                                                                        <i class="ri-delete-bin-6-fill"></i>
+                                                                    </button>
+                                                                </form>
                                                                 <a type="button" data-bs-toggle="modal" data-bs-target="#edituser<?= $value['id_user']; ?>">
                                                                     <i class="mdi mdi-lead-pencil"></i>
                                                                 </a>
@@ -68,6 +71,7 @@
                                                         </td>
                                                     </tr>
                                                 <?php } ?>
+
 
                                             </tbody>
                                         </table>

@@ -41,8 +41,8 @@ if ($username == '') { ?>
                         </div>
                         <h4 class="text-muted text-center font-size-18"><b>Sign In</b></h4>
                         <div class="p-3">
-                            <?php echo form_open('auth/proseslogin') ?>
-                            <?= csrf_field(); ?>
+                            <?= form_open('auth/proseslogin') ?>
+                            <?= csrf_field() ?>
                             <div class="form-group mb-3 row">
                                 <div class="col-12">
                                     <label class="form-label ms-1">Username</label>
@@ -67,7 +67,7 @@ if ($username == '') { ?>
                                     <a href="<?= base_url("#") ?>" class="btn btn-success  w-100 waves-effect waves-light" type="submit">Kembali</a>
                                 </div>
                             </div>
-                            <?php echo form_close() ?>
+                            <?= form_close() ?>
                         </div>
                         <!-- end -->
                     </div>

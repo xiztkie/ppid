@@ -7,30 +7,39 @@ use CodeIgniter\Model;
 class M_User extends Model
 {
     protected $table = 'user';
-
-    public function selectinstansi()
-    {
-        return $this->db->table('instansi')->get()->getResultArray();
-    }
-    public function search($keyword)
-    {
-        return $this->table('user')->like('username', $keyword);
-    }
+    protected $primaryKey = 'id_user';
+    protected $allowedFields = ['username', 'password', 'level', 'id_int'];
 
     public function adduser($data)
     {
-        $this->db->table('user')->insert($data);
+        return $this->insert($data);
     }
+
     public function edituser($data)
     {
-        $this->db->table('user')
-            ->where('id_user', $data['id_user'])
-            ->update($data);
+        return $this->update($data['id_user'], $data);
     }
+
     public function deleteuser($data)
     {
-        $this->db->table('user')
-            ->where('id_user', $data['id_user'])
-            ->delete($data);
+        return $this->delete($data);
+    }
+
+    // Mengambil data pengguna berdasarkan ID pengguna
+    public function getUserById($id_user)
+    {
+        return $this->where('id_user', $id_user)->first();
+    }
+
+    // Cari pengguna berdasarkan keyword
+    public function search($keyword)
+    {
+        return $this->like('username', $keyword);
+    }
+
+    // Select instansi dari tabel instansi
+    public function selectinstansi()
+    {
+        return $this->db->table('instansi')->get()->getResultArray();
     }
 }

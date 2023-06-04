@@ -7,15 +7,21 @@
     <div class="page-content">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-sm-12">
+                        <img class="card-img-top img-fluid" src="assets/images/regulasi.png" alt="Card image cap" >
+                </div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-xl-12">
                     <div class="card">
-                        <h5 class="card-header">REGULASI</h5>
+                        <h5 class="card-header"><i class="fas fa-database"></i>&nbsp;&nbsp;DATA REGULASI</h5>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped mb-0">
                                     <thead>
-                                        <tr>
-                                            <th align="center" width="5%">No</th>
+                                        <tr class="table-info text-center">
+                                            <th align="center" width="2%">No</th>
                                             <th align="center" width="50%">Judul</th>
                                             <th align="center" width="5%">Download</th>
                                         </tr>

@@ -4,12 +4,15 @@ namespace App\Controllers;
 
 use App\Models\M_Permohonan;
 use CodeIgniter\Email\Email;
+use CodeIgniter\Validation\Validation;
+use CodeIgniter\Validation\Exceptions\ValidationException;
 
 class Permohonan extends BaseController
 {
     public function __construct()
     {
         $this->M_Permohonan = new M_Permohonan();
+        $this->validation = \Config\Services::validation();
         $this->email = \Config\Services::email();
         helper('form');
         helper('number');
@@ -30,6 +33,110 @@ class Permohonan extends BaseController
 
     public function tambahtiket()
     {
+        $validation = $this->validation;
+
+        $validation->setRules([
+            'nik' => [
+                'label' => 'NIK',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom NIK harus diisi.',
+                ],
+            ],
+            'nama' => [
+                'label' => 'Nama',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Nama harus diisi.',
+                ],
+            ],
+            'alamat' => [
+                'label' => 'Alamat',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Alamat harus diisi.',
+                ],
+            ],
+            'kontak' => [
+                'label' => 'Kontak',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Kontak harus diisi.',
+                ],
+            ],
+            'pekerjaan' => [
+                'label' => 'Pekerjaan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Pekerjaan harus diisi.',
+                ],
+            ],
+            'kategori' => [
+                'label' => 'Kategori',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Kategori harus diisi.',
+                ],
+            ],
+            'email' => [
+                'label' => 'Email',
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => 'Kolom Email harus diisi.',
+                    'valid_email' => 'Format Email tidak valid.',
+                ],
+            ],
+            'kebutuhan' => [
+                'label' => 'Informasi Yang Dibutuhkan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Informasi Yang Dibutuhkan harus diisi.',
+                ],
+            ],
+            'tujuan' => [
+                'label' => 'Tujuan Pengunaan Informasi',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Tujuan Pengunaan Informasi harus diisi.',
+                ],
+            ],
+            'id_int' => [
+                'label' => 'ID Instansi',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom ID Instansi harus diisi.',
+                ],
+            ],
+            'cara_info' => [
+                'label' => 'Cara Memperoleh Informasi',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Cara Memperoleh Informasi harus diisi.',
+                ],
+            ],
+            'dgn_cara' => [
+                'label' => 'Cara Mendapatkan Salinan Informasi',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Cara Mendapatkan Salinan Informasi harus diisi.',
+                ],
+            ],
+            'file' => [
+                'label' => 'File',
+                'rules' => 'uploaded[file]|max_size[file,2048]|ext_in[file,zip,rar,pdf,jpeg,jpg]',
+                'errors' => [
+                    'uploaded' => 'File Belum Diupload',
+                    'max_size' => 'Ukuran File terlalu besar.',
+                    'ext_in' => 'Ekstensi File tidak valid. Hanya diperbolehkan file dengan ekstensi: pdf, doc, docx.',
+                ],
+            ],
+        ]);
+
+        if (!$validation->withRequest($this->request)->run()) {
+            // Validation failed, redirect back with error messages
+            return redirect()->back()->withInput()->with('validationErrors', $validation->getErrors());
+        }
+
         $file = $this->request->getFile('file');
         $file->move('files/dokumen');
         $namafile = $file->getName();

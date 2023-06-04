@@ -98,7 +98,7 @@
                                         <div class="table-responsive">
                                             <table class="table table-bordered mb-0">
                                                 <thead>
-                                                    <tr align="center">
+                                                    <tr class="table-info text-center">
                                                         <th width="5%">No</th>
                                                         <th>Instansi</th>
                                                         <th>Informasi</th>

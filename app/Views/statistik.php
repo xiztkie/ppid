@@ -7,6 +7,76 @@
     <div class="page-content">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <p class="text-truncate font-size-14 mb-2">TOTAL DATA INFOPUBLIK</p>
+                                    <h4 class="mb-2"><? echo $countinfopublik; ?></h4>
+                                </div>
+                                <div class="avatar-sm">
+                                    <span class="avatar-title bg-light text-primary rounded-3">
+                                        <i class="fas fa-database font-size-24"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!-- end cardbody -->
+                    </div><!-- end card -->
+                </div><!-- end col -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <p class="text-truncate font-size-14 mb-2">TOTAL PERMOHONAN DATA</p>
+                                    <h4 class="mb-2"><?php echo $countpermohonan; ?></h4>
+                                </div>
+                                <div class="avatar-sm">
+                                    <span class="avatar-title bg-light text-success rounded-3">
+                                        <i class=" fas fa-file-alt font-size-24"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!-- end cardbody -->
+                    </div><!-- end card -->
+                </div><!-- end col -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <p class="text-truncate font-size-14 mb-2">PERMOHONAN SELESAI</p>
+                                    <h4 class="mb-2"><?php echo $countselesai; ?></h4> 
+                                </div>
+                                <div class="avatar-sm">
+                                    <span class="avatar-title bg-light text-primary rounded-3">
+                                        <i class="fas fa-check-double font-size-24"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!-- end cardbody -->
+                    </div><!-- end card -->
+                </div><!-- end col -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <p class="text-truncate font-size-14 mb-2">TOTAL UNDUHAN</p>
+                                    <h4 class="mb-2"><?php echo $countdownload; ?></h4> 
+                                </div>
+                                <div class="avatar-sm">
+                                    <span class="avatar-title bg-light text-success rounded-3">
+                                        <i class="fas fa-cloud-download-alt font-size-24"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!-- end cardbody -->
+                    </div><!-- end card -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+            <div class="row">
                 <form id="filterForm" method="GET" action="<?= base_url('statistik/filter') ?>">
                     <div class="col-xl-12">
                         <div class="card">
@@ -90,7 +160,7 @@
                                 <div class="table-responsive">
                                     <table class="table table-bordered mb-0">
                                         <thead>
-                                            <tr align="center">
+                                            <tr class="table-info text-center">
                                                 <th width="2%">No</th>
                                                 <th width="50%">Instansi</th>
                                                 <th>Permohonan Baru</th>
@@ -104,8 +174,7 @@
                                             <?php $no = 1; ?>
                                             <?php $seluruhpermohonan = 0; ?>
                                             <?php foreach ($dataper as $data) : ?>
-                                                <?php $totalpermohonan = $data->permohonanbaru + $data->permohonanproses + $data->permohonantolak; ?>
-                                                <?php $seluruhpermohonan += $totalpermohonan; ?>
+                                                <?php $seluruhpermohonan += $data->totalpermohonan; ?>
                                                 <tr align="center">
                                                     <td><?= $no++ ?></td>
                                                     <td align="left"><?php echo $data->nama_int; ?></td>
@@ -113,7 +182,7 @@
                                                     <td><?php echo $data->permohonanproses ?></td>
                                                     <td><?php echo $data->permohonansetuju; ?></td>
                                                     <td><?php echo $data->permohonantolak; ?></td>
-                                                    <td><?php echo $totalpermohonan; ?></td>
+                                                    <td><?php echo $data->totalpermohonan; ?></td>
                                                 </tr>
                                             <?php endforeach; ?>
                                             <tr align="center">
@@ -132,11 +201,58 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Page-content -->
-        <script>
-            function setPrintFilter() {
-                document.getElementById('printFilter').value = 'true';
-            }
-        </script>
-        <?= $this->endSection() ?>
+            <div class="row" id="tableContainer">
+                <div class="col-xl-12">
+                    <div class="card">
+                    <h4 class="card-header" ><i class="fas fa-chart-bar fa-1x"> </i>&nbsp;&nbsp;PERINGKAT TERATAS DATA PALING SERING DIUNDUH</h4>
+                        <div class="card-body">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered mb-0">
+                                        <thead>
+                                            <tr class="table-info text-center">
+                                                <th width="5%">No</th>
+                                                <th>Instansi</th>
+                                                <th>Informasi</th>
+                                                <th width="50%">Judul</th>
+                                                <th width="5%">Download</th>
+                                                <th width="5%">Dilihat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php $no = 1; ?>
+                                            <?php foreach ($infopublik as $value) { ?>
+                                                <tr>
+                                                    <td align="center"><?= $no++; ?></td>
+                                                    <td align="center"><?= $value->nama_int; ?></td>
+                                                    <td align="center">
+                                                        <option value="<?= $value->informasi; ?>">
+                                                            <?php if ($value->informasi == 1) {
+                                                                echo "Berkala";
+                                                            } else if ($value->informasi == 2) {
+                                                                echo "Tersedia Setiap Saat";
+                                                            } else if ($value->informasi == 3) {
+                                                                echo "Serta Merta";
+                                                            } ?>
+                                                        </option>
+                                                    </td>
+                                                    <td><?= $value->created_at; ?><br><?= $value->judul; ?></td>
+                                                    <td align="center"><a href="<?= site_url('statistik/download/' . $value->id_info) ?>"><i class="fas fa-download"></i></a></td>
+                                                    <td align="center"><i class="fas fa-eye"></i>&nbsp;&nbsp;<?= $value->counter; ?></td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page-content -->
+            <script>
+                function setPrintFilter() {
+                    document.getElementById('printFilter').value = 'true';
+                }
+            </script>
+            <?= $this->endSection() ?>

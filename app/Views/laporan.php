@@ -6,15 +6,21 @@
 <div class="main-content">
     <div class="page-content">
         <div class="container-fluid">
+        <div class="row">
+                <div class="col-sm-12">
+                        <img class="card-img-top img-fluid" src="assets/images/laporan.png" alt="Card image cap" >
+                </div>
+            </div>
+            <br>
             <div class="row">
                 <div class="col-xl-12">
                     <div class="card">
-                        <h5 class="card-header">LAPORAN</h5>
+                        <h5 class="card-header"><i class="fas fa-file-contract"></i>&nbsp;&nbsp;DATA LAPORAN</h5>
                         <div class="card-body">
                             <table class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead>
-                                    <tr>
-                                        <th width="5%">No</th>
+                                    <tr class="table-info text-center">
+                                        <th width="2%">No</th>
                                         <th width="50%">Judul</th>
                                         <th width="5%">Download</th>
                                     </tr>

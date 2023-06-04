@@ -36,8 +36,8 @@ use Kint\Zval\Value;
 
 <body>
     <img src="<?= base_url() ?>assets/images/kop.jpg" align="center" height="200px">
-<br>
-<br>
+    <br>
+    <br>
     <table class="table table-bordered mb-0">
         <thead>
             <tr align="center">
@@ -73,8 +73,7 @@ use Kint\Zval\Value;
             <?php $no = 1; ?>
             <?php $seluruhpermohonan = 0; ?>
             <?php foreach ($dataper as $data) : ?>
-                <?php $totalpermohonan = $data->permohonanbaru + $data->permohonanproses + $data->permohonantolak; ?>
-                <?php $seluruhpermohonan += $totalpermohonan; ?>
+                <?php $seluruhpermohonan += $data->totalpermohonan; ?>
                 <tr align="center">
                     <td><?= $no++ ?></td>
                     <td align="left"><?php echo $data->nama_int; ?></td>
@@ -82,7 +81,7 @@ use Kint\Zval\Value;
                     <td><?php echo $data->permohonanproses ?></td>
                     <td><?php echo $data->permohonansetuju; ?></td>
                     <td><?php echo $data->permohonantolak; ?></td>
-                    <td><?php echo $totalpermohonan; ?></td>
+                    <td><?php echo $data->totalpermohonan; ?></td>
                 </tr>
             <?php endforeach; ?>
             <tr align="center">

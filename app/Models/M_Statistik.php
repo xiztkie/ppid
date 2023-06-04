@@ -12,6 +12,7 @@ class M_Statistik extends Model
     {
         $sql = "SELECT
         instansi.nama_int,
+        COUNT(permohonan.id_pemohon) AS totalpermohonan,
         SUM(CASE WHEN permohonan.status_tiket = 1 THEN 1 ELSE 0 END) AS permohonanbaru,
         SUM(CASE WHEN permohonan.status_tiket = 2 AND (permohonan.solved IS NULL OR permohonan.solved = 0) THEN 1 ELSE 0 END) AS permohonanproses,
         SUM(CASE WHEN permohonan.solved = 1 AND permohonan.status_tiket <> 2 THEN 1 ELSE 0 END) AS permohonansetuju,
@@ -33,10 +34,11 @@ class M_Statistik extends Model
     {
         $builder = $this->db->table('instansi');
         $builder->select('instansi.nama_int,
-            COALESCE(SUM(CASE WHEN permohonan.status_tiket = 1 THEN 1 ELSE 0 END), 0) AS permohonanbaru,
-            COALESCE(SUM(CASE WHEN permohonan.status_tiket = 2 AND (permohonan.solved IS NULL OR permohonan.solved = 0) THEN 1 ELSE 0 END), 0) AS permohonanproses,
-            COALESCE(SUM(CASE WHEN permohonan.solved = 1 AND permohonan.status_tiket <> 2 THEN 1 ELSE 0 END), 0) AS permohonansetuju,
-            COALESCE(SUM(CASE WHEN (permohonan.status_tiket = 2 OR permohonan.status_tiket = 3) AND prosestiket.status_pro = \'Ditolak\' THEN 1 ELSE 0 END), 0) AS permohonantolak');
+        COUNT(permohonan.id_pemohon) AS totalpermohonan,
+        SUM(CASE WHEN permohonan.status_tiket = 1 THEN 1 ELSE 0 END) AS permohonanbaru,
+        SUM(CASE WHEN permohonan.status_tiket = 2 AND (permohonan.solved IS NULL OR permohonan.solved = 0) THEN 1 ELSE 0 END) AS permohonanproses,
+        SUM(CASE WHEN permohonan.solved = 1 OR permohonan.status_tiket = 2 THEN 1 ELSE 0 END) AS permohonansetuju,
+        SUM(CASE WHEN (permohonan.status_tiket = 3 OR permohonan.status_tiket = 2) AND prosestiket.status_pro = \'Ditolak\' THEN 1 ELSE 0 END) AS permohonantolak');
         $builder->join('permohonan', 'instansi.id_int = permohonan.id_int', 'left');
         $builder->join('prosestiket', 'permohonan.id_pemohon = prosestiket.id_pemohon', 'left');
 
@@ -59,5 +61,37 @@ class M_Statistik extends Model
     public function selectinstansi()
     {
         return $this->db->table('instansi')->get()->getResultArray();
+    }
+
+    public function getInfopublikData()
+    {
+        $sql = "SELECT infopublik.*, instansi.nama_int
+        FROM infopublik
+        JOIN instansi ON infopublik.id_int = instansi.id_int
+        ORDER BY infopublik.counter DESC";
+
+        $query = $this->db->query($sql);
+        return $query->getResult();
+    }
+
+    public function countinfopublik()
+    {
+        return $this->db->table('infopublik')->countAllResults();
+    }
+
+    public function countpermohonan()
+    {
+        return $this->db->table('permohonan')->countAllResults();
+    }
+
+    public function countselesai()
+    {
+        return $this->db->table('permohonan')->where('solved', 2)->countAllResults();
+    }
+
+    public function countdownload()
+    {
+        $result = $this->db->table('infopublik')->selectSum('counter')->get()->getRow();
+        return $result->counter;
     }
 }
