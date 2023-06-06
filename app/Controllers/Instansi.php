@@ -16,6 +16,13 @@ class Instansi extends BaseController
 
     public function index()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $currentpage = $this->request->getVar('page_instansi') ? $this->request->getVar('page_instansi') : 1;
         $keyword = $this->request->getVar('keyword');
         if($keyword){
@@ -36,6 +43,13 @@ class Instansi extends BaseController
 
     public function addinstansi()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $data = array(
             'nama_int' => $this->request->getPost('nama_int'),
         );
@@ -46,6 +60,13 @@ class Instansi extends BaseController
 
     public function editinstansi($id_int)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $data = array(
             'id_int' => $id_int,
             'nama_int' => $this->request->getPost('nama_int')
@@ -57,6 +78,13 @@ class Instansi extends BaseController
 
     public function delete($id_int)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $data = array(
             'id_int' => $id_int,
         );

@@ -67,11 +67,24 @@
             color: #dd4814;
         }
     </style>
+    <style>
+        /* CSS Anda */
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-rounded {
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="wrap">
-        <h1>404</h1>
-
+        <img src="<?= base_url();?>assets\images\404.png" alt="">
         <p>
             <?php if (ENVIRONMENT !== 'production') : ?>
                 <?= nl2br(esc($message)) ?>
@@ -79,6 +92,8 @@
                 <?= lang('Errors.sorryCannotFind') ?>
             <?php endif ?>
         </p>
+
+        <button type="button" onclick="window.history.back()" class="btn btn-rounded btn-primary">Kembali</button>
     </div>
 </body>
 </html>

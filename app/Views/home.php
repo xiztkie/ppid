@@ -43,7 +43,7 @@
                         <div class="card-body">
                             <div class="col-lg-12">
                                 <div class="card">
-                                    <form action="" method="post">
+                                    <form action="" method="get">
                                         <div class="row no-gutters align-items-center text-center">
                                             <div class="col-md-3">
                                                 <div class="card-body">

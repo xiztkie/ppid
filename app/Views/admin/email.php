@@ -11,7 +11,7 @@
                                         <div class="col-sm">
                                             <?php foreach ($settings as $value) : ?>
                                                 <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#editmail<?= $value['id_email']; ?>">
-                                                    EDIT EMAIL <i class="fas fa-plus-circle ms-2"></i>
+                                                    SET EMAIL <i class="fas fa-plus-circle ms-2"></i>
                                                 </button>
                                             <?php endforeach; ?>
                                         </div>
@@ -86,7 +86,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="myExtraLargeModalLabel">Tambah user / OPD</h5>
+                        <h5 class="modal-title" id="myExtraLargeModalLabel">SETTING EMAIL</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">

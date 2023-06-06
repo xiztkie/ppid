@@ -16,6 +16,13 @@ class Emailsetting extends BaseController
 
     public function index()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $model = $this->M_Email;
         $settings = $model->findAll();
 
@@ -30,6 +37,13 @@ class Emailsetting extends BaseController
 
     public function editemail($id_email)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $smtp_host = $this->request->getPost('smtp_host');
         $smtp_user = $this->request->getPost('smtp_user');
         $smtp_pass = $this->request->getPost('smtp_pass');

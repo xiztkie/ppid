@@ -47,6 +47,13 @@ class Permohonandata extends BaseController
 
     public function indexbaru()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $currentpage = $this->request->getVar('page_perbaru') ? $this->request->getVar('page_perbaru') : 1;
         $keyword = $this->request->getVar('keyword');
         if ($keyword) {
@@ -101,6 +108,13 @@ class Permohonandata extends BaseController
 
     public function accepttiket($id_pemohon)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $no_tiket = $this->request->getPost('no_tiket');
         $data = array(
             'id_pemohon' => $id_pemohon,
@@ -115,6 +129,13 @@ class Permohonandata extends BaseController
 
     public function tolaktiket($id_pemohon)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $no_tiket = $this->request->getPost('no_tiket');
         $data = array(
             'id_pemohon' => $id_pemohon,

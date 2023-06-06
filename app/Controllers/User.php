@@ -16,6 +16,14 @@ class User extends BaseController
 
     public function index()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
+        
         $currentpage = $this->request->getVar('page_instansi') ? $this->request->getVar('page_instansi') : 1;
         $keyword = $this->request->getVar('keyword');
         if ($keyword) {
@@ -37,6 +45,14 @@ class User extends BaseController
 
     public function adduser()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
+
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
         $level = $this->request->getPost('level');
@@ -59,6 +75,14 @@ class User extends BaseController
 
     public function edituser($id_user)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
+
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
         $level = $this->request->getPost('level');
@@ -87,6 +111,14 @@ class User extends BaseController
     }
     public function delete($id_user)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
+
         $this->M_User->deleteuser($id_user);
         session()->setFlashdata('pesan', 'Data berhasil dihapus !!!');
         return redirect()->to(base_url('user'));

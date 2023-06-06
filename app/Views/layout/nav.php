@@ -42,6 +42,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="<?= base_url('sendemail') ?>" class=" waves-effect">
+                        <i class="fas fa-file-signature"></i>
+                        <span>Kirim Email</span>
+                    </a>
+                </li>
+                <li>
                     <a href="<?= base_url('laporantiket') ?>" class=" waves-effect">
                         <i class="fas fa-file-export"></i>
                         <span>Laporan</span>

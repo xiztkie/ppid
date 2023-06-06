@@ -21,8 +21,31 @@ class M_Home extends Model
     {
         return $this->db->table('instansi')->get()->getResultArray();
     }
-    public function search($keyword)
+
+    public function getFilteredData($filters)
     {
-        return $this->table('infopublik')->like('judul', $keyword);
+        $query = $this->table('infopublik');
+
+        if (isset($filters['keyword'])) {
+            $query->like('judul', $filters['keyword']);
+        }
+
+        if (isset($filters['id_int'])) {
+            if ($filters['id_int'] !== '') {
+                $query->where('infopublik.id_int', $filters['id_int']);
+            } else {
+                $query->orWhere('infopublik.id_int', null);
+            }
+        }
+
+        if (isset($filters['informasi'])) {
+            if ($filters['informasi'] !== '') {
+                $query->where('informasi', $filters['informasi']);
+            } else {
+                $query->orWhere('informasi', null);
+            }
+        }
+
+        return $query;
     }
 }

@@ -8,7 +8,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                        <img class="card-img-top img-fluid" src="assets/images/regulasi.png" alt="Card image cap" >
+                    <img class="card-img-top img-fluid" src="assets/images/regulasi.png" alt="Card image cap">
                 </div>
             </div>
             <br>
@@ -27,7 +27,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php $no = 1 + (10 * ($currentpage - 1)); ?>
+                                        <?php $no = 1; ?>
                                         <?php foreach ($regulasidata as $key => $value) { ?>
                                             <tr>
                                                 <td align="center"><?= $no++; ?></td>
@@ -35,9 +35,15 @@
                                                 <td align="center"><a href="<?= base_url('files/regulasi/') ?><?= $value['file_reg']; ?>"><i class=" fas fa-download "></i></a></td>
                                             </tr>
                                         <?php } ?>
+                                        <?php foreach ($sopdata as $key => $value) { ?>
+                                            <tr>
+                                                <td align="center"><?= $no++; ?></td>
+                                                <td><?= $value['created_at']; ?><br><?= $value['judul_sop']; ?></td>
+                                                <td align="center"><a href="<?= base_url('files/sop/') ?><?= $value['file_sop']; ?>"><i class=" fas fa-download "></i></a></td>
+                                            </tr>
+                                        <?php } ?>
                                     </tbody>
                                 </table><br>
-                                <?= $pager->links('regulasidata', 'pager_regulasidata') ?>
                             </div>
                         </div>
                     </div>

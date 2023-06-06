@@ -17,6 +17,13 @@ class Laporandata extends BaseController
 
     public function index()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $currentpage = $this->request->getVar('page_lap') ? $this->request->getVar('page_lap') : 1;
         $keyword = $this->request->getVar('keyword');
         if ($keyword) {
@@ -37,7 +44,13 @@ class Laporandata extends BaseController
 
     public function addlap()
     {
-
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $fileinfo = $this->request->getFile('file_lap');
         $fileinfo->move('files/laporan');
         $namafileinfo = $fileinfo->getName();
@@ -54,6 +67,13 @@ class Laporandata extends BaseController
 
     public function editlap($id_lap)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $data = array(
             'id_lap' => $id_lap,
             'judul_lap' => $this->request->getPost('judul_lap'),
@@ -66,7 +86,13 @@ class Laporandata extends BaseController
 
     public function delete($id_lap)
     {
-        
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+    
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $file_lap = $this->M_Laporandata->filedata($id_lap);
         unlink('files/laporan/' . $file_lap['file_lap']);
 

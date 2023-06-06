@@ -1382,3 +1382,152 @@ in APPPATH\Config\Email.php on line 120.
 INFO - 2023-06-04 21:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-04 21:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-04 21:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 21:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 21:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 21:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-04 23:32:43 --> Undefined property: App\Controllers\User::$M_User
+in APPPATH\Controllers\User.php on line 28.
+ 1 APPPATH\Controllers\User.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\User::$M_User', 'C:\\xampp\\htdocs\\ppid\\app\\Controllers\\User.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+INFO - 2023-06-04 23:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-04 23:33:31 --> Undefined property: App\Controllers\User::$M_User
+in APPPATH\Controllers\User.php on line 28.
+ 1 APPPATH\Controllers\User.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\User::$M_User', 'C:\\xampp\\htdocs\\ppid\\app\\Controllers\\User.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+INFO - 2023-06-04 23:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-04 23:33:39 --> Undefined property: App\Controllers\User::$M_User
+in APPPATH\Controllers\User.php on line 28.
+ 1 APPPATH\Controllers\User.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\User::$M_User', 'C:\\xampp\\htdocs\\ppid\\app\\Controllers\\User.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+INFO - 2023-06-04 23:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-04 23:38:13 --> Undefined property: App\Controllers\User::$M_User
+in APPPATH\Controllers\User.php on line 28.
+ 1 APPPATH\Controllers\User.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\User::$M_User', 'C:\\xampp\\htdocs\\ppid\\app\\Controllers\\User.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-06-04 23:39:33 --> Too few arguments to function CodeIgniter\Session\Session::__construct(), 0 passed in C:\xampp\htdocs\ppid\app\Config\Services.php on line 15 and exactly 2 expected
+in SYSTEMPATH\Session\Session.php on line 164.
+ 1 APPPATH\Config\Services.php(15): CodeIgniter\Session\Session->__construct()
+ 2 SYSTEMPATH\Config\BaseService.php(193): Config\Services::session(false)
+ 3 APPPATH\Config\Services.php(12): CodeIgniter\Config\BaseService::getSharedInstance('session')
+ 4 SYSTEMPATH\Common.php(988): Config\Services::session()
+ 5 APPPATH\Filters\FilterAuth.php(14): session('log')
+ 6 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-06-04 23:40:11 --> Argument 1 passed to CodeIgniter\Session\Session::__construct() must implement interface SessionHandlerInterface, instance of Config\App given, called in C:\xampp\htdocs\ppid\app\Config\Services.php on line 16
+in SYSTEMPATH\Session\Session.php on line 164.
+ 1 APPPATH\Config\Services.php(16): CodeIgniter\Session\Session->__construct(Object(Config\App))
+ 2 SYSTEMPATH\Config\BaseService.php(193): Config\Services::session(false)
+ 3 APPPATH\Config\Services.php(13): CodeIgniter\Config\BaseService::getSharedInstance('session')
+ 4 SYSTEMPATH\Common.php(988): Config\Services::session()
+ 5 APPPATH\Filters\FilterAuth.php(14): session('log')
+ 6 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-06-04 23:44:43 --> Argument 1 passed to CodeIgniter\Session\Session::__construct() must implement interface SessionHandlerInterface, instance of Config\App given, called in C:\xampp\htdocs\ppid\app\Config\Services.php on line 15
+in SYSTEMPATH\Session\Session.php on line 164.
+ 1 APPPATH\Config\Services.php(15): CodeIgniter\Session\Session->__construct(Object(Config\App))
+ 2 SYSTEMPATH\Config\BaseService.php(193): Config\Services::session(false)
+ 3 APPPATH\Config\Services.php(12): CodeIgniter\Config\BaseService::getSharedInstance('session')
+ 4 SYSTEMPATH\Common.php(988): Config\Services::session()
+ 5 APPPATH\Filters\FilterAuth.php(14): session('log')
+ 6 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-06-04 23:44:43 --> Argument 1 passed to CodeIgniter\Session\Session::__construct() must implement interface SessionHandlerInterface, instance of Config\App given, called in C:\xampp\htdocs\ppid\app\Config\Services.php on line 15
+in SYSTEMPATH\Session\Session.php on line 164.
+ 1 APPPATH\Config\Services.php(15): CodeIgniter\Session\Session->__construct(Object(Config\App))
+ 2 SYSTEMPATH\Config\BaseService.php(193): Config\Services::session(false)
+ 3 APPPATH\Config\Services.php(12): CodeIgniter\Config\BaseService::getSharedInstance('session')
+ 4 SYSTEMPATH\Common.php(988): Config\Services::session()
+ 5 APPPATH\Filters\FilterAuth.php(14): session('log')
+ 6 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+CRITICAL - 2023-06-04 23:44:44 --> Argument 1 passed to CodeIgniter\Session\Session::__construct() must implement interface SessionHandlerInterface, instance of Config\App given, called in C:\xampp\htdocs\ppid\app\Config\Services.php on line 15
+in SYSTEMPATH\Session\Session.php on line 164.
+ 1 APPPATH\Config\Services.php(15): CodeIgniter\Session\Session->__construct(Object(Config\App))
+ 2 SYSTEMPATH\Config\BaseService.php(193): Config\Services::session(false)
+ 3 APPPATH\Config\Services.php(12): CodeIgniter\Config\BaseService::getSharedInstance('session')
+ 4 SYSTEMPATH\Common.php(988): Config\Services::session()
+ 5 APPPATH\Filters\FilterAuth.php(14): session('log')
+ 6 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ppid\\public\\index.php')
+INFO - 2023-06-04 23:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-04 23:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -17,6 +17,13 @@ class Sop extends BaseController
 
     public function index()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $currentpage = $this->request->getVar('page_Sop') ? $this->request->getVar('page_Sop') : 1;
         $keyword = $this->request->getVar('keyword');
         if ($keyword) {
@@ -37,15 +44,21 @@ class Sop extends BaseController
 
     public function addsop()
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
 
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $fileinfo = $this->request->getFile('file_sop');
         $fileinfo->move('files/sop');
         $namafileinfo = $fileinfo->getName();
-    
+
         $data = array(
             'judul_sop' => $this->request->getPost('judul_sop'),
             'file_sop' => $namafileinfo,
-            'created_at' => date('Y-m-d H:i:s')         
+            'created_at' => date('Y-m-d H:i:s')
         );
         $this->M_Sop->addsop($data);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan !!!');
@@ -54,6 +67,13 @@ class Sop extends BaseController
 
     public function editsop($id_sop)
     {
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $data = array(
             'id_sop' => $id_sop,
             'judul_sop' => $this->request->getPost('judul_sop'),
@@ -66,7 +86,13 @@ class Sop extends BaseController
 
     public function delete($id_sop)
     {
-        
+        $isLoggedIn = session('log');
+        $userRole = session()->get('level');
+
+        if (!$isLoggedIn || $userRole !== 'Admin') {
+            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+            return redirect()->to(base_url('home'));
+        }
         $file_sop = $this->M_Sop->filedata($id_sop);
         unlink('files/sop/' . $file_sop['file_sop']);
 

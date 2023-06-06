@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <h5 class="card-header">DATA INFOPUBLIKk</h5>
+                        <h5 class="card-header">DATA INFOPUBLIK</h5>
                         <div class="card-body">
                             <div class="d-flex">
                                 <div class="col-sm">
@@ -105,11 +105,22 @@
                 <div class="row mb-3">
                     <label for="example-text-input" class="col-sm-3 col-form-label">Instansi</label>
                     <div class="col-sm-9">
-                        <select class="form-select" name="id_int">
-                            <?php foreach ($opd as $instansi) { ?>
-                                <option value="<?php echo $instansi['id_int']; ?>"><?php echo $instansi['nama_int']; ?> </option>
-                            <?php } ?>
-                        </select>
+                        <?php
+                        $int_session = session()->get('nama_int');
+                        $idint_session = session()->get('id_int');
+                        $userRole = session()->get('level');
+                        if ($userRole == 'Operator') {
+                            // Jika pengguna tidak terautentikasi atau bukan Admin, redirect ke halaman lain
+                            echo '<input class="form-control" name="id_int" value="' . $idint_session . '" hidden readonly>
+                                  <input class="form-control" value="' . $int_session . '" readonly>';
+                        } else {
+                        ?>
+                            <select class="form-select" name="id_int">
+                                <?php foreach ($opd as $instansi) { ?>
+                                    <option value="<?php echo $instansi['id_int']; ?>"><?php echo $instansi['nama_int']; ?></option>
+                                <?php } ?>
+                            </select>
+                        <?php } ?>
                     </div>
                 </div>
                 <div class="row mb-3">
@@ -193,7 +204,7 @@
                     <div class="row mb-3">
                         <label for="example-text-input" class="col-sm-3 col-form-label">File</label>
                         <div class="col-9 text-center">
-                        <input type="text" class="form-control" name="file_info" value="<?= $value['file_info'] ?>" hidden>
+                            <input type="text" class="form-control" name="file_info" value="<?= $value['file_info'] ?>" hidden>
                             <a href="<?= base_url('files/infopublik/'); ?><?= $value['file_info'] ?>"><i class="fas  fas fa-download fa-2x"></i><br>
                                 <span><?= $value['judul'] ?></span>
                             </a>
