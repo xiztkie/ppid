@@ -31,6 +31,7 @@ class Pager extends BaseConfig
         'pager_regulasidata'   => 'App\Views\Pager\pager_regulasidata',
         'pager_laporandata'   => 'App\Views\Pager\pager_laporandata',
         'pager_permohonandata'   => 'App\Views\Pager\pager_permohonandata',
+        'pager_kirimemail'   => 'App\Views\Pager\pager_kirimemail',
     ];
 
     /**

@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('sendemail') ?>" class=" waves-effect">
+                    <a href="<?= base_url('kirimemail') ?>" class=" waves-effect">
                         <i class="fas fa-file-signature"></i>
                         <span>Kirim Email</span>
                     </a>

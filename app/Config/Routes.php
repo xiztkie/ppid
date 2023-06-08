@@ -45,7 +45,10 @@ $routes->get('/permohonandata', 'Permohonandata::index');
 $routes->get('/permohonanbaru', 'Permohonandata::indexbaru');
 $routes->get('/prosespermohonan', 'Permohonandata::indexproses');
 $routes->get('/email', 'Emailsetting::index');
+$routes->get('/kirimemail', 'Kirimemail::index');
 $routes->get('/cekpermohonan', 'Cektiket::progresstiket');
+$routes->post('kirimemail/send', 'Kirimemail::send');
+
 
 /*
  * --------------------------------------------------------------------

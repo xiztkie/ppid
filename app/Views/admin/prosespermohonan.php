@@ -58,13 +58,13 @@
                                                                     } ?></td>
                                                 <td><?= $value['keterangan']; ?></td>
                                                 <td align="center">
-                                                    <a type="button" class="btn btn-success btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#solved<?php $value['id_pemohon']; ?>">
+                                                    <a type="button" class="btn btn-success btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#solved<?= $value['id_pemohon']; ?>">
                                                         <i class="fas fa-check-double"></i>
                                                     </a>&nbsp;
-                                                    <a type="button" class="btn btn-primary btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#detailpermohonan<?php $value['id_pemohon']; ?>">
+                                                    <a type="button" class="btn btn-primary btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#detailpermohonan<?= $value['id_pemohon']; ?>">
                                                         <i class="fas fa-tasks"></i>
                                                     </a>&nbsp;
-                                                    <a type="button" class="btn btn-info btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#proses<?php $value['id_pemohon']; ?>">
+                                                    <a type="button" class="btn btn-info btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#proses<?= $value['id_pemohon']; ?>">
                                                         <i class="fas fa-paper-plane"></i>
                                                     </a>
                                                 </td>
@@ -102,7 +102,7 @@
 </div> <!-- container-fluid -->
 </div>
 <?php foreach ($prosespermohonan as $key => $value) { ?>
-    <div class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="detailpermohonan<?php $value['id_pemohon']; ?>">
+    <div class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="detailpermohonan<?= $value['id_pemohon']; ?>">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -218,7 +218,7 @@
     </div><!-- /.modal -->
 <?php } ?>
 <?php foreach ($prosespermohonan as $key => $value) { ?>
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="solved<?php $value['id_pemohon']; ?>">
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="solved<?= $value['id_pemohon']; ?>">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -262,7 +262,7 @@
     </div>
 <?php } ?>
 <?php foreach ($prosespermohonan as $key => $value) { ?>
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="proses<?php $value['id_pemohon']; ?>">
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="proses<?= $value['id_pemohon']; ?>">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">

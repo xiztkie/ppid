@@ -161,7 +161,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="myExtraLargeModalLabel">Edit Dokumen Publik <?= $value['judul']; ?></h5>
+                    <h5 class="modal-title" id="myExtraLargeModalLabel">Edit Dokumen Publik <br><?= $value['judul']; ?></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -170,7 +170,7 @@
                         <label for="example-text-input" class="col-sm-3 col-form-label">Instansi</label>
                         <div class="col-sm-9">
                             <select class="form-select" name="id_int">
-                                <option value="<?= $value['id_int']; ?>" selected><?= $value['id_int']; ?></option>
+                                <option value="<?= $value['id_int']; ?>" selected><?= $value['nama_int']; ?></option>
                                 <?php foreach ($opd as $instansi) { ?>
                                     <option value="<?php echo $instansi['id_int']; ?>"><?php echo $instansi['nama_int']; ?> </option>
                                 <?php } ?>
@@ -198,7 +198,7 @@
                     <div class="row mb-3">
                         <label for="example-text-input" class="col-sm-3 col-form-label">Judul</label>
                         <div class="col-sm-9">
-                            <textarea class="form-control" name="judul" type="text" value="<?= $value['judul']; ?>"></textarea>
+                            <textarea class="form-control" name="judul" type="text" ><?= $value['judul']; ?></textarea>
                         </div>
                     </div>
                     <div class="row mb-3">

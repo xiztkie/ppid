@@ -64,6 +64,13 @@
 <script src="<?= base_url() ?>assets/libs/chart.js/Chart.bundle.min.js"></script>
 <script src="<?= base_url() ?>assets/js/pages/chartjs.init.js"></script>
 
+<script src="<?= base_url() ?>assets/libs/tinymce/tinymce.min.js"></script>
+
+<!-- init js -->
+<script src="<?= base_url() ?>assets/js/pages/form-editor.init.js"></script>
+
+<script src="<?= base_url() ?>assets/js/app.js"></script>
+
 </body>
 
 </html>

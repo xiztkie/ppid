@@ -61,7 +61,7 @@
                                                     <?php endif; ?>
                                                 </td>
                                                 <td align="center">
-                                                    <a type="button" class="btn btn-primary btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#detailpermohonan<?php $value['id_pemohon']; ?>">
+                                                    <a type="button" class="btn btn-primary btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#detailpermohonan<?= $value['id_pemohon']; ?>">
                                                         <i class="fas fa-tasks"></i>
                                                     </a>&nbsp;
                                                 </td>
@@ -80,7 +80,7 @@
 </div>
 </div> <!-- container-fluid -->
 <?php foreach ($permohonandata as $key => $value) { ?>
-    <div class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="detailpermohonan<?php $value['id_pemohon']; ?>">
+    <div class="modal fade bs-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" id="detailpermohonan<?= $value['id_pemohon']; ?>">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
